@@ -1,0 +1,8 @@
+{
+  "run_list": [
+    "git"
+  ],
+  "automatic": {
+    "ipaddress": "vcpd-db"
+  }
+}

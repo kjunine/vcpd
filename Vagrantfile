@@ -21,6 +21,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     db.vm.network "private_network", ip: "192.168.33.20"
   end
 
+  config.vm.define "vcpd-docker" do |docker|
+    docker.vm.network "private_network", ip: "192.168.33.30"
+  end
+
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.

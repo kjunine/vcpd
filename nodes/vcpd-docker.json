@@ -1,0 +1,9 @@
+{
+  "run_list": [
+    "apt",
+    "docker"
+  ],
+  "automatic": {
+    "ipaddress": "vcpd-docker"
+  }
+}

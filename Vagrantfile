@@ -22,6 +22,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.define "vcpd-docker" do |docker|
+    docker.vm.network "forwarded_port", guest: 2375, host: 2375
     docker.vm.network "private_network", ip: "192.168.33.30"
   end
 
